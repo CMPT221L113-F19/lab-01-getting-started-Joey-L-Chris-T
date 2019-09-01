@@ -1,0 +1,38 @@
+<!doctype html>
+
+<!-- Code by: Joey L & Chris T -->
+<html lang="en">
+    <head>
+        <title>Lab 1 | Data Converter</title>
+        <meta charset="utf-8"/>
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <script src="converter.js"></script>
+
+        <h1>Lab 1 - Getting Started with HTML, CSS, &amp; JavaScript</h1>
+        <p>This simple Web application allows you to enter a number in base 2, 10 or 16 (binary, decimal, or hexadecimal), and convert it to another format.</p>
+        <form onsubmit="return false;">
+            <h2>Number Converter</h2>
+            <label>
+                <p>Input type and number:</p>
+                <select id="inputType">
+                    <option id="inputBinary" value="B" title="Binary">Binary</option>
+                    <option id="inputDecimal" value="D" title="Decimal">Decimal</option>
+                    <option id="inputHex" value="H" title="Hexadecimal">Hexadecimal</option>
+                </select>
+                <input id="inputNum" value="0" />
+                <p>Output type:</p>
+                <select id="outputType">
+                    <option id="outputBinary" value="B" title="Binary">Binary</option>
+                    <option id="outputDecimal" value="D" title="Decimal">Decimal</option>
+                    <option id="outputHex" value="H" title="Hexadecimal">Hexadecimal</option>
+                </select>
+            </label>
+            <button onclick="convertNumber();">Convert</button>
+            <output id="result"></output>
+        </form>
+    </body>
+</html>

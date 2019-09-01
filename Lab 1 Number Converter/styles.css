@@ -1,0 +1,13 @@
+h1 {
+    font-variant: small-caps;
+}
+form {
+    border: 1px solid black;
+    margin-right: auto;
+    width: 25%;
+    padding: 1em;
+    padding-top: 0;
+}
+form h2 {
+    color: #66f;
+}
